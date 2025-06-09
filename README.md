@@ -1,0 +1,1 @@
+# Solr & Lucene Technical Support Assistant
