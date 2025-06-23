@@ -17,4 +17,4 @@ streamlit
 # Dev Tools (Optional)
 ipython
 black
-
+PyGithub
