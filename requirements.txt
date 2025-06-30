@@ -4,6 +4,7 @@ beautifulsoup4
 html2text
 tqdm
 python-dotenv
+nltk
 
 # Embedding
 sentence-transformers
