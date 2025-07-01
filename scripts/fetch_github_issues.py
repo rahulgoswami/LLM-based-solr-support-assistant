@@ -18,7 +18,7 @@ gh = Github(TOKEN)
 
 # Repositories to ingest
 REPOS = ["apache/solr", "apache/lucene-solr"]
-OUTPUT_DIR = "data/github_issues"
+OUTPUT_DIR = "../data/github_issues"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 CRAWL_DELAY = 1  # seconds
