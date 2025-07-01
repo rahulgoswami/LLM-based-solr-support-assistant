@@ -5,6 +5,7 @@ html2text
 tqdm
 python-dotenv
 nltk
+numpy<2.0.0
 
 # Embedding
 sentence-transformers
