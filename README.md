@@ -1,7 +1,8 @@
 # Solr & Lucene Technical Support Assistant
 An LLM based technical Solr assistant which pulls in data from Solr mailing lists, Github PRs and official Solr documentation for context to answer technical user queries.
 
-How to run:
+<h2>How to run</h2>
+
 1) Setup a virtual environment
 python3 -m venv venv
 source venv/bin/activate  # or 'venv\Scripts\activate' on Windows
@@ -19,14 +20,14 @@ Your initial setup is now complete.
 
 
 
-Scripts to be run from scripts/ folder in the given sequence:
+<h2>Scripts to be run from scripts/ folder in the given sequence</h2>
 
 	fetch_github_issues.py ==> Fetches Github issues from apache/solr and apache/lucene-solr, and stores in the data/github_issues folder
 	chunk_issues.py ==> Chunks the title+body and PR comments in chunks of 300 tokens with a 20% overlap between chunks for better context retention during vector generation 
 	index_chunks.py ==> Generates embeddings using mpnet model (with 384-512 token context window) and indexes them into ChromaDB
 
 
-TO-DO:
+<h2>TO-DO</h2>
 Phase 3: Retrieval-Augmented Generation (RAG)
 
 	Goal: Combine retrieval with LLMs to produce grounded answers.
