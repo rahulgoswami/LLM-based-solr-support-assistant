@@ -27,7 +27,7 @@ Your initial setup is now complete.
 	index_chunks.py ==> Generates embeddings using mpnet model (with 384-512 token context window) and indexes them into ChromaDB
 
 
-<h2>TO-DO</h2>
+<h2>TO-DO (WIP)</h2>
 Phase 3: Retrieval-Augmented Generation (RAG)
 
 	Goal: Combine retrieval with LLMs to produce grounded answers.
