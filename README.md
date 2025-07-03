@@ -16,7 +16,7 @@ You'll need a Github Personal Access Token (PAT) in order to be able to crawl th
 In the project folder create a .env file with your PAT:<br/>
 GITHUB_TOKEN=\<Your PAT\>
 
-Your initial setup is now complete.
+The initial setup is now complete.
 
 
 
