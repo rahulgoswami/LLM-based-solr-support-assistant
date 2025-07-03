@@ -35,12 +35,11 @@ Phase 2: Semantic search
 
     Goal: Generate and Index embeddings in ChromaDB to support semantic search for RAG
 
-<h3>To-Do (WIP)</h3>
 Phase 3: Retrieval-Augmented Generation (RAG)
 
 	Goal: Combine retrieval with LLMs to produce grounded answers.
 
-
+<h3>To-Do (WIP)</h3>
 Phase4: Agentic Tooling & MCP Refactor
 
 	Goal: Evolve RAG into a modular, multi-step “agent” pipeline.
