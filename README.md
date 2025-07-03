@@ -3,9 +3,9 @@ An LLM based technical Solr assistant which pulls in data from Solr mailing list
 
 <h2>How to run</h2>
 
-1) Setup a virtual environment
-python3 -m venv venv
-source venv/bin/activate  # or 'venv\Scripts\activate' on Windows
+1) Setup a virtual environment<br/>
+	python3 -m venv venv<br/>
+	source venv/bin/activate  # or 'venv\Scripts\activate' on Windows
 
 2) pip install -r requirements.txt
 
