@@ -20,3 +20,4 @@ streamlit
 ipython
 black
 PyGithub
+openai

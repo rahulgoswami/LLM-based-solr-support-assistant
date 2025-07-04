@@ -4,7 +4,7 @@ import sys
 import json
 from typing import List, Dict
 
-import openai
+from openai import OpenAI
 from chromadb import PersistentClient
 from chromadb.config import Settings, DEFAULT_TENANT, DEFAULT_DATABASE
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
@@ -13,13 +13,13 @@ from dotenv import load_dotenv
 load_dotenv()  # <— load env vars from .env 
 
 # ——— CONFIGURATION ———
-VECTOR_STORE_DIR = "vector_store"
+VECTOR_STORE_DIR = "../vector_store"
 COLLECTION_NAME  = "solr_support"
 EMBED_MODEL      = "all-mpnet-base-v2"
-OPENAI_MODEL     = "gpt-4"       # or "gpt-3.5-turbo"
+OPENAI_MODEL     = "gpt-4o"       # or "gpt-3.5-turbo"
 TOP_K            = 5             # number of passages to retrieve
 OPENAI_API_KEY   = os.getenv("OPENAI_API_KEY")
-
+client_llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 class RAGRetriever:
     def __init__(self,
@@ -63,7 +63,6 @@ class RAGRetriever:
 
 class RAGGenerator:
     def __init__(self, llm_model: str, api_key: str):
-        openai.api_key = api_key
         self.model = llm_model
 
     def generate(self, query: str, contexts: List[Dict]) -> str:
@@ -80,7 +79,7 @@ class RAGGenerator:
                 f"[{i}] ({src}:{src_id}) {ctx['text']}"
             )
         context_str = "\n\n".join(context_blocks)
-
+        #print(f"Fetched context from db: {context_str}")
         # Prompt template
         prompt = (
             "You are a technical support assistant for Apache Solr and Lucene.\n"
@@ -91,7 +90,7 @@ class RAGGenerator:
         )
 
         # Call OpenAI
-        response = openai.ChatCompletion.create(
+        response = client_llm.chat.completions.create(
             model=self.model,
             messages=[{"role": "system", "content": prompt}],
             temperature=0.0,
