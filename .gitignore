@@ -4,3 +4,5 @@ __pycache__/
 *.log
 vector_store/
 *.env
+data/
+mbox_cache/
