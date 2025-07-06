@@ -14,7 +14,7 @@ An LLM based technical Solr assistant which pulls in data from Solr mailing list
 4) The tool currently ingests the Github issues from apache/solr and apache/lucene-solr projects for its dataset. User mailing lists and documentation to be added.
 You'll need a Github Personal Access Token (PAT) in order to be able to crawl the Github issues (Refer to https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token). 
 In the project folder create a .env file with your PAT and OpenAI API Key:<br/>
-GITHUB_TOKEN=\<Your PAT\>
+GITHUB_TOKEN=\<Your PAT\><br/>
 OPENAI_API_KEY=\<Your OpenAI API key\>
 
 The initial setup is now complete.
