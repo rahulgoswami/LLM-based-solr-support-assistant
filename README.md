@@ -40,12 +40,12 @@ Phase 3: Retrieval-Augmented Generation (RAG)
 
 	Goal: Combine retrieval with LLMs to produce grounded answers.
 
+Phase4: Agentic Tooling
+
+        Goal: Evolve RAG into a modular, multi-step “agent” pipeline.
+
 <h3>To-Do (WIP)</h3>
-Phase4: Agentic Tooling & MCP Refactor
 
-	Goal: Evolve RAG into a modular, multi-step “agent” pipeline.
-
-
-Phase 5: MCP Server Deployment
+Phase 5: MCP refactor and Server Deployment
 
 	Goal: Turn the agent pipeline into a production-ready service.
