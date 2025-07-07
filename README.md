@@ -38,11 +38,11 @@ Phase 2: Semantic search
 
 Phase 3: Retrieval-Augmented Generation (RAG)
 
-	Goal: Combine retrieval with LLMs to produce grounded answers.
+    Goal: Combine retrieval with LLMs to produce grounded answers.
 
 Phase4: Agentic Tooling
 
-        Goal: Evolve RAG into a modular, multi-step “agent” pipeline.
+    Goal: Evolve RAG into a modular, multi-step “agent” pipeline.
 
 <h3>To-Do (WIP)</h3>
 
