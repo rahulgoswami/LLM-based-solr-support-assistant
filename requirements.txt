@@ -21,3 +21,9 @@ ipython
 black
 PyGithub
 openai
+
+#Langchain
+langchain
+langchain-community
+langchain-openai
+langchain[hub]
