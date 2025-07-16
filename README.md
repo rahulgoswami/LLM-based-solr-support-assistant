@@ -27,7 +27,7 @@ The initial setup is now complete.
 	chunk_issues.py ==> Chunks the title+body and PR comments in chunks of 300 tokens with a 20% overlap between chunks for better context retention during vector generation 
 	index_chunks.py ==> Generates embeddings using mpnet model (with 384-512 token context window) and indexes them into ChromaDB
 
-<h2>Roadmap</h2>
+<h2>Phases completed</h2>
 Phase 1: Ingestion
    
     Goal: Ingest core data sources for retrieval.
